@@ -16,7 +16,7 @@ Migrate tables and seed initial data:
 
 ```sh
 sequelize db:migrate
-sequelize db
+sequelize db:seed:all
 ```
 
 Run the API server:
