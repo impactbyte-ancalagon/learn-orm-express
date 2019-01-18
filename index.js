@@ -18,9 +18,17 @@ app.get("/", (req, res) => {
 })
 
 app.get("/users", (req, res) => {
-  res.send({
-    data: ""
-  })
+  models.User.findAll()
+    .then(users => {
+      res.send({
+        data: users
+      })
+    })
+    .catch(error => {
+      res.status(400).send({
+        error: error
+      })
+    })
 })
 
 models.sequelize.sync().then(function() {
