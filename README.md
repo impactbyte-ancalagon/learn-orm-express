@@ -1,5 +1,16 @@
 # Learn ORM and Express
 
+## Setup database
+
+1. Install MySQL
+2. Create user
+3. Create database with these names:
+   - `todo_dev`
+   - `todo_test`
+   - `todo_production`
+
+## Setup app
+
 Install local dependencies:
 
 ```sh
